@@ -1,0 +1,330 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "UI: Caption Splitter",
+            "type": "python",
+            "request": "launch",
+            "cwd": "${workspaceFolder}/expansion_pipeline/code",
+            "module": "components.caption_splitter.caption_splitter_prefilter_ui",
+            "console": "integratedTerminal",
+            "justMyCode": false
+        },
+        {
+            "name": "UI: Citance Adder",
+            "type": "python",
+            "request": "launch",
+            "cwd": "${workspaceFolder}/expansion_pipeline/code",
+            "module": "components.citance_adder.citance_adder_ui",
+            "console": "integratedTerminal",
+            "justMyCode": false
+        },
+        {
+            "name": "UI: Text Label Matcher",
+            "type": "python",
+            "request": "launch",
+            "cwd": "${workspaceFolder}/expansion_pipeline/code",
+            "module": "components.text_label_matcher.text_label_matcher_ui",
+            "console": "integratedTerminal",
+            "justMyCode": false
+        },
+        {
+            "name": "UI: Panel Matcher",
+            "type": "python",
+            "request": "launch",
+            "cwd": "${workspaceFolder}/expansion_pipeline/code",
+            "module": "components.panel_matcher.panel_matcher_ui",
+            "console": "integratedTerminal",
+            "justMyCode": false
+        },
+        {
+            "name": "UI: Data Merger",
+            "type": "python",
+            "request": "launch",
+            "cwd": "${workspaceFolder}/expansion_pipeline/code",
+            "module": "components.data_merger.data_merger_ui",
+            "console": "integratedTerminal",
+            "justMyCode": false
+        },
+        {
+            "name": "UI: Data Expander",
+            "type": "python",
+            "request": "launch",
+            "cwd": "${workspaceFolder}/expansion_pipeline/code",
+            "module": "components.data_expander.data_expander_ui",
+            "console": "integratedTerminal",
+            "justMyCode": false
+        },
+        {
+            "name": "UI: Component Comparitor",
+            "type": "python",
+            "request": "launch",
+            "cwd": "${workspaceFolder}/expansion_pipeline/code",
+            "module": "components.component_comparator.component_comparator_ui",
+            "console": "integratedTerminal",
+            "justMyCode": false
+        },
+        {
+            "name": "Local Run: Caption Splitter",
+            "type": "python",
+            "request": "launch",
+            "cwd": "${workspaceFolder}/expansion_pipeline/code",
+            "module": "components.caption_splitter.caption_splitter_prefilter_runner",
+            "console": "integratedTerminal",
+            "justMyCode": false
+        },
+        {
+            "name": "Local Run: Citance Adder",
+            "type": "python",
+            "request": "launch",
+            "cwd": "${workspaceFolder}/expansion_pipeline/code",
+            "module": "components.citance_adder.citance_adder_runner",
+            "console": "integratedTerminal",
+            "justMyCode": false
+        },
+        {
+            "name": "Local Run: Text Label Matcher Input",
+            "type": "python",
+            "request": "launch",
+            "cwd": "${workspaceFolder}/expansion_pipeline/code",
+            "module": "components.text_label_matcher_input.text_label_matcher_input_runner",
+            "console": "integratedTerminal",
+            "justMyCode": false
+        },
+        {
+            "name": "Local Run: Text Label Matcher",
+            "type": "python",
+            "request": "launch",
+            "cwd": "${workspaceFolder}/expansion_pipeline/code",
+            "module": "components.text_label_matcher.text_label_matcher_runner",
+            "console": "integratedTerminal",
+            "justMyCode": false
+        },
+        {
+            "name": "Local Run: Panel Matcher Input",
+            "type": "python",
+            "request": "launch",
+            "cwd": "${workspaceFolder}/expansion_pipeline/code",
+            "module": "components.panel_matcher_input.panel_matcher_input_runner",
+            "console": "integratedTerminal",
+            "justMyCode": false
+        },
+        {
+            "name": "Local Run: Panel Matcher",
+            "type": "python",
+            "request": "launch",
+            "cwd": "${workspaceFolder}/expansion_pipeline/code",
+            "module": "components.panel_matcher.panel_matcher_runner",
+            "console": "integratedTerminal",
+            "justMyCode": false
+        },
+        {
+            "name": "Local Run: Data Expander",
+            "type": "python",
+            "request": "launch",
+            "cwd": "${workspaceFolder}/expansion_pipeline/code",
+            "module": "components.data_expander.data_expander_runner",
+            "console": "integratedTerminal",
+            "justMyCode": false
+        },
+        {
+            "name": "Local Run: Data Merger",
+            "type": "python",
+            "request": "launch",
+            "cwd": "${workspaceFolder}/expansion_pipeline/code",
+            "module": "components.data_merger.data_merger_runner",
+            "console": "integratedTerminal",
+            "justMyCode": false
+        },
+        {
+            "name": "Local Run: Analyze Data",
+            "type": "python",
+            "request": "launch",
+            "cwd": "${workspaceFolder}/expansion_pipeline/code",
+            "module": "shared.analyze_pipeline_results",
+            "console": "integratedTerminal",
+            "justMyCode": false
+        },
+        {
+            "name": "Python: Text Label Matcher",
+            "type": "python",
+            "request": "launch",
+            "cwd": "${workspaceFolder}/expansion_pipeline/code",
+            "module": "components.text_label_matcher.cli_runner",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "args": [
+                "--input_folder_path",
+                "${workspaceFolder}/_results/3.text_label_matcher_input",
+                "--output_folder_path",
+                "${workspaceFolder}/_results/3.text_label_matcher"
+            ],
+            "env": {
+                "LOGLEVEL": "DEBUG"
+            }
+        },
+        {
+            "name": "Python: OpenCV Panel Split",
+            "type": "python",
+            "request": "launch",
+            "module": "segmentation.opencv_panel_split",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "args": [
+                "--input_image_folder_path",
+                "${workspaceFolder}/_results/sample_multi_panel_images"
+            ],
+        },
+        {
+            "name": "Python: Caption Splitter",
+            "type": "python",
+            "request": "launch",
+            "module": "text_caption_segmentation.segment_captions",
+            "console": "integratedTerminal",
+            "justMyCode": false
+        },
+        {
+            "name": "Python: Download Pub Med Articles",
+            "type": "python",
+            "request": "launch",
+            "module": "data.download_pubmed_files",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "args": [
+            ],
+        },
+        {
+            "name": "Python: Decompress Pub Med Articles",
+            "type": "python",
+            "request": "launch",
+            "module": "data.decompress_pubmed_files",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "args": [
+            ],
+        },
+        {
+            "name": "Python: Optical Character Recognition (v3.2)",
+            "type": "python",
+            "request": "launch",
+            "cwd": "${workspaceFolder}/expansion_pipeline/code",
+            "module": "components.image_label_detector.aml_component_cli_runner",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "args": [
+                "--input_folder_path",
+                "${workspaceFolder}/_results/image_label_detector/input",
+                "--output_folder_path",
+                "${workspaceFolder}/_results/image_label_detector/output",
+                "--batch_size",
+                "2",
+                "--max_images",
+                "5",
+                // "--log_figure_texts",
+                // "True",
+            ],
+            "envFile": "${workspaceFolder}/.env",
+            "env": {
+                "AZURE_VISION_ENDPOINT": "https://westus2.api.cognitive.microsoft.com/",
+                "LOGLEVEL": "DEBUG"
+            }
+        },
+        {
+            "name": "Python: Image Analysis (v4.0)",
+            "type": "python",
+            "request": "launch",
+            "cwd": "${workspaceFolder}/expansion_pipeline/code",
+            "module": "components.image_label_detector.aml_component_cli_runner",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "args": [
+                "--input_folder_path",
+                "${workspaceFolder}/_results/2.1.caption_splitter/2023-07-24T18-04/success",
+                "--output_folder_path",
+                "${workspaceFolder}/_results/image_label_detector/output",
+                "--max_images",
+                "5",
+                // "--log_figure_texts",
+                // "True",
+                "--use_version_4",
+                "True",
+            ],
+            "envFile": "${workspaceFolder}/.env",
+            "env": {
+                "AZURE_VISION_ENDPOINT": "https://westus2.api.cognitive.microsoft.com/",
+                "LOGLEVEL": "DEBUG"
+            }
+        },
+        {
+            "name": "Python: Image Label Comparer",
+            "type": "python",
+            "request": "launch",
+            "cwd": "${workspaceFolder}/expansion_pipeline/code",
+            "module": "components.image_label_detector.figure_texts_comparer",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "args": [
+                "--figures_file_path",
+                "${workspaceFolder}/_results/image_label_detector/input/figures.jsonl",
+                "--figure_texts_objects_a_file_path",
+                "${workspaceFolder}/_results/image_label_detector/output/20230717.190855_v3.2/success/figure_texts.jsonl",
+                // "${workspaceFolder}/_results/image_label_detector/output/20230713.164600/output.jsonl",
+                "--figure_texts_objects_b_file_path",
+                "${workspaceFolder}/_results/image_label_detector/output/20230717.190918_v4.0/success/figure_texts.jsonl",
+                // "${workspaceFolder}/_results/image_label_detector/output/20230718.174032_v4.0/success/figure_texts.jsonl",
+                "--output_folder_path",
+                "${workspaceFolder}/_results/image_label_detector/output",
+            ],
+            "envFile": "${workspaceFolder}/.env",
+            "env": {
+                "LOGLEVEL": "DEBUG"
+            }
+        },
+        {
+            "name": "Python: Figure Splitter",
+            "type": "python",
+            "request": "launch",
+            "cwd": "${workspaceFolder}/expansion_pipeline/code",
+            "module": "components.figure_splitter.aml_component_cli_runner",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "args": [
+                "--input_folder_path",
+                "${workspaceFolder}/_results/2.1.caption_splitter/2023-07-24T18-04/success",
+                "--output_folder_path",
+                "${workspaceFolder}/_results/figure_splitter/output/",
+                "--max_images",
+                "5",
+            ],
+            "env": {
+                "LOGLEVEL": "DEBUG"
+            }
+        },
+        {
+            "name": "Python: Data Expander CLI Runner",
+            "type": "python",
+            "request": "launch",
+            "cwd": "${workspaceFolder}/expansion_pipeline/code",
+            "module": "components.data_expander.data_expander_cli_runner",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "args": [
+                "--input_folder_path",
+                "${workspaceFolder}/_results/4.panel_matcher/2023-07-26T16-41/success",
+                "--output_folder_path",
+                "${workspaceFolder}/_results/5.data_expander",
+                "--output_dbfs_paths",
+                "True",
+                "--max_figures",
+                "5",
+            ],
+            "envFile": "${workspaceFolder}/.env",
+            "env": {
+                "LOGLEVEL": "DEBUG"
+            }
+        },
+    ]
+}
