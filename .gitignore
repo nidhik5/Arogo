@@ -1,5 +1,8 @@
 _results/
-
+blip_model/
+fine_tuned_blip/
+pretrained/
+blip_generated_captions.csv
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
